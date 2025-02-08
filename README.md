@@ -164,7 +164,7 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 ## 🙏 Support
 
 Join the Telegram: [t.me/IYKYKLabs](https://t.me/IYKYKLabs)
-Follow Me on X: [x.com/eth\\_moon\\_](https://x.com/eth_moon_)
+Follow Me on X: [x.com/eth_moon\_](https://x.com/eth_moon_)
 
 ## 🙏 Acknowledgments
 
