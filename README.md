@@ -164,12 +164,12 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 ## 🙏 Support
 
 💬 Join the Telegram: [t.me/IYKYKLabs](https://t.me/IYKYKLabs)
-🐦 Follow Me on X: [x.com/eth*moon*](https://x.com/eth_moon_)
+🐦 Follow Me on X: [x.com/eth_moon\_](https://x.com/eth_moon_)
 
 ## 🙏 Acknowledgments
 
 - DexScreener API team for their excellent documentation
-- The amazing DEX analytics community
+- And most of all our community. If you know, you know.
 
 ---
 
