@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -7,6 +8,13 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+=======
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+>>>>>>> 2f889bd (Initial commit)
 .Python
 build/
 develop-eggs/
@@ -20,6 +28,7 @@ parts/
 sdist/
 var/
 wheels/
+<<<<<<< HEAD
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -169,3 +178,31 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+=======
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Local config files
+.env
+config.json
+
+# Database
+*.db
+*.sqlite3
+
+# Other
+.DS_Store
+>>>>>>> 2f889bd (Initial commit)

@@ -1,0 +1,8 @@
+redis==5.0.7
+python-arango==8.0.0
+python-dotenv==1.0.0
+ujson==5.8.0
+aioredis==2.0.1
+aiohttp>=3.8.0,<3.9.0
+requests==2.32.3
+scikit-learn==1.5.1
