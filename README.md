@@ -97,21 +97,70 @@ tail -f dexwatch.log
 
 ## 📊 Sample Output
 
-```json
-{
-  "chain": "ethereum",
-  "metrics": {
-    "active_tokens": 156,
-    "total_pairs": 892,
-    "total_liquidity_usd": 25892156.42,
-    "volume_24h_usd": 12456789.23,
-    "avg_pairs_per_token": 5.7
-  },
-  "dex_distribution": {
-    "uniswap_v2": { "pairs": 456, "share": 51.1 },
-    "sushiswap": { "pairs": 234, "share": 26.2 }
-  }
-}
+```text
+Pipeline Summary:
+----------------
+Total Runtime: 5.72 seconds
+Total Requests: 86
+Successful Requests: 86
+Failed Requests: 0
+Tokens Processed: 83
+Success Rate: 100.00%
+
+2025-02-08 13:22:09.549 - config - INFO - [run_pipeline] - Pipeline shutdown complete
+2025-02-08 13:22:09.549 - config - INFO - [main] -
+=== Analyzing Pair Data ===
+2025-02-08 13:22:09.725 - config - INFO - [analyze_pairs] -
+=== Chain ID Pair Distribution ===
+2025-02-08 13:22:09.725 - config - INFO - [analyze_pairs] -
+Chain: solana
+2025-02-08 13:22:09.725 - config - INFO - [analyze_pairs] -   Active Tokens: 120
+2025-02-08 13:22:09.725 - config - INFO - [analyze_pairs] -   Total Pairs: 253 (92.0% of all pairs)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   Total Liquidity: $13,614,997.79
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   24h Volume: $201,597,841.53
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   Avg Pairs per Token: 2.1
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   DEX Distribution:
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -     raydium: 121 pairs (47.8%)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -     meteora: 69 pairs (27.3%)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -     pumpfun: 47 pairs (18.6%)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -     moonshot: 13 pairs (5.1%)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -     orca: 3 pairs (1.2%)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -
+Chain: base
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   Active Tokens: 5
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   Total Pairs: 7 (2.5% of all pairs)
+2025-02-08 13:22:09.726 - config - INFO - [analyze_pairs] -   Total Liquidity: $286,107.93
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   24h Volume: $867,141.57
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   Avg Pairs per Token: 1.4
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   DEX Distribution:
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -     uniswap: 7 pairs (100.0%)
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -
+Chain: pulsechain
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   Active Tokens: 2
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   Total Pairs: 7 (2.5% of all pairs)
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   Total Liquidity: $50,872.93
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   24h Volume: $167,232.52
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   Avg Pairs per Token: 3.5
+2025-02-08 13:22:09.727 - config - INFO - [analyze_pairs] -   DEX Distribution:
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -     pulsex: 7 pairs (100.0%)
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -
+Chain: ethereum
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   Active Tokens: 6
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   Total Pairs: 6 (2.2% of all pairs)
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   Total Liquidity: $427,254.80
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   24h Volume: $2,494,532.62
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   Avg Pairs per Token: 1.0
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -   DEX Distribution:
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -     uniswap: 6 pairs (100.0%)
+2025-02-08 13:22:09.728 - config - INFO - [analyze_pairs] -
+Chain: xrpl
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   Active Tokens: 2
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   Total Pairs: 2 (0.7% of all pairs)
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   Total Liquidity: $73,609.66
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   24h Volume: $430,722.32
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   Avg Pairs per Token: 1.0
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -   DEX Distribution:
+2025-02-08 13:22:09.729 - config - INFO - [analyze_pairs] -     xrpl: 2 pairs (100.0%)
 ```
 
 ### Performance Tips
