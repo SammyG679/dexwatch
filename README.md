@@ -1,3 +1,5 @@
+This is a forked version of the original from KeithTheDev, with the only changes being the removal of the proxy rotation, and the addition of an hourly csv file output
+
 # 🔍 DexWatch
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -70,14 +72,10 @@ pip install -r requirements.txt
 # Database Settings
 REDIS_URL = "redis://localhost:6379"
 ARANGO_URL = "http://localhost:8529"
-DB_NAME = "dexwatch"
-
-# Proxy Configuration
-PROXY_USERNAME = "your_username" # (optional)
-PROXY_PASSWORD = "your_password" # (optional)
+DB_NAME = "jeettech"
 
 # Performance Tuning
-CONCURRENCY_LIMIT = 50
+CONCURRENCY_LIMIT = 10
 BATCH_SIZE = 30
 ```
 
@@ -94,6 +92,36 @@ Monitor the analysis:
 ```bash
 tail -f dexwatch.log
 ```
+
+**Check if cron is running**:
+```bash
+sudo systemctl status cron
+```
+Should also show "active (running)"
+
+**Verify your cron jobs exist**:
+```bash
+crontab -l
+```
+Should show your two jobs
+
+**Check the logs to see if data is being collected**:
+```bash
+tail -f /var/log/dexwatch/pipeline.log
+```
+You should see new entries appearing every minute
+
+**Check if exports are working**:
+```bash
+tail -f /var/log/dexwatch/export.log
+```
+You should see entries every hour
+
+If any of these checks fail:
+1. Start the failed service
+2. Check its logs for errors
+3. Make sure your credentials are still correct in the `.env` file
+
 
 ## 📊 Sample Output
 
@@ -218,6 +246,7 @@ Follow Me on X: [x.com/eth_moon\_](https://x.com/eth_moon_)
 ## 🙏 Acknowledgments
 
 - DexScreener API team for their excellent documentation
+- KeithTheDev for creating the original tool and the guidance on how to remove the rotating proxy dependencies
 - And most of all our community. If you know, you know.
 
 ---
